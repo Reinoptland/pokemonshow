@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   root "pokemons#index"
 
   get "pokemons" => "pokemons#index"
+  get "pokemons/new" => "pokemons#new", as: :new_pokemon
   get "pokemons/:id" => "pokemons#show", as: :pokemon
 end
